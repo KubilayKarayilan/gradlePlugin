@@ -26,7 +26,7 @@ tasks.getByName<Test>("test") {
 
 pluginBundle {
     website = "https://www.kubilayka.com/"
-    vcsUrl = "https://github.com/kubilayka"
+    vcsUrl = "https://github.com/KubilayKarayilan/gradlePlugin"
     tags = listOf("home","test","greeting","plugins")
 }
 gradlePlugin{
