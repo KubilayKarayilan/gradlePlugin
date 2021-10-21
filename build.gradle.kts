@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "no.home"
-version = "1.0"
+version = "1.3"
 
 repositories {
     mavenCentral()
@@ -31,11 +31,17 @@ pluginBundle {
 }
 gradlePlugin{
     plugins {
-        create("simplePlugin"){
-            id = "no.home.gplugin"
+        create("greetingPlugin"){
+            id = "greetingPlugin"
             displayName = "test plugin"
             description = "this is my first plugin published"
             implementationClass = "no.home.GreetingPlugin"
+            group = "no.home.greeting"
         }
+    }
+}
+publishing{
+    repositories {
+        mavenLocal()
     }
 }
