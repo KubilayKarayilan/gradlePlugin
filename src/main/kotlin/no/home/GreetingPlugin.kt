@@ -7,7 +7,7 @@ import org.gradle.api.credentials.HttpHeaderCredentials
 import org.gradle.authentication.http.HttpHeaderAuthentication
 import org.gradle.kotlin.dsl.create
 import java.net.URI
-
+//make many tasks to dependency management
 class GreetingPlugin : Plugin<Project> {
     override fun apply(project: Project) {
         //Create extension to pass arguments from project
